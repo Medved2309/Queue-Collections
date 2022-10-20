@@ -10,14 +10,14 @@ public class Main {
         Queue<Person> queueAttraction = new LinkedList<>(generateClients());
         while (!queueAttraction.isEmpty()) {
             Person currentPerson = queueAttraction.poll();
-            System.out.printf("%s %s Зашел на атрацион,  имея - %d билета(а/ов)\n",
+            System.out.printf("%s %s Зашел на атракцион, имея - %d билет(а/ов)\n",
                     currentPerson.getName(),
                     currentPerson.getSureName(),
                     currentPerson.getQuatityTickets());
 
             int quatityTickets = currentPerson.getQuatityTickets();
             if (quatityTickets > 0) {
-                System.out.printf("%s %s решил прокатиться на атракционе, имея - %d билета(а/ов)\n",
+                System.out.printf("%s %s прокатился на атракционе 1 раз, имея - %d билет(а/ов)\n",
                         currentPerson.getName(),
                         currentPerson.getSureName(),
                         currentPerson.getQuatityTickets());
